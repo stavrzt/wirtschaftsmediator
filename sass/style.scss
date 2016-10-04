@@ -1,0 +1,86 @@
+@import "compass/reset";
+
+@font-face {
+  font-family: GothamPro;
+  src: url(../fonts/GothamPro/GothamProLight.ttf);
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: GothamPro;
+  src: url(../fonts/GothamPro/GothamPro.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: GothamPro;
+  src: url(../fonts/GothamPro/GothamProBold.ttf);
+  font-weight: 500;
+}
+
+html{height: 100%;}
+
+body{
+	height: 100%;
+	background: rgb(129, 125, 114);
+	font-family: GothamPro;
+	font-weight:100;
+	color:#fff;
+}
+
+.wrapper{
+	height:100%;
+	background-image: url('../imgs/1bckg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-width: 1000px;
+	margin:0 auto;
+}
+
+.main_text{
+	display:none;
+	float: right;
+    font-size: 48px;
+    width: 580px;
+    margin-top: 26%;
+    margin-right: 60px;
+    line-height: 1.4;
+
+	b{font-weight:500;margin-top: 40px;display: block;}
+}
+
+.fix_menu{
+	position:absolute;
+	right:0;
+	background-color: rgba(0, 0, 0, 0.3);
+	height: 100%;
+	font-size: 18px;
+	width:320px;
+
+	ul{
+		padding: 0 40px;
+		position: relative;
+    	top: calc(50% - 324px);
+	}
+
+	li{
+		margin-bottom: 15px;
+		border-bottom: 1px solid transparent;
+
+		&:hover{
+			border-bottom: 1px solid #fff;
+			cursor:pointer;
+		}
+
+		a{
+			display:block;
+			line-height:40px;
+			color:white;
+			text-decoration:none;
+		}
+	}
+	.active_li{
+	border-bottom: 1px solid #fff;
+}
+
+}
