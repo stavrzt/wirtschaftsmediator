@@ -18,7 +18,7 @@
   font-weight: 500;
 }
 
-html{height: 100%;}
+html{height: 100%;min-height:900px;}
 
 body{
 	height: 100%;
@@ -30,37 +30,44 @@ body{
 
 .wrapper{
 	height:100%;
-	background-image: url('../imgs/1bckg.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
-	min-width: 1000px;
+	min-width: 1780px;
 	margin:0 auto;
+	position:relative;
+
+	a{
+		display:block;
+		color:white;
+		text-decoration:none;
+	}
 }
 
 .main_text{
-	display:none;
-	float: right;
+	position: absolute;
+	top:360px;
+	right: 370px;
     font-size: 48px;
     width: 580px;
-    margin-top: 26%;
-    margin-right: 60px;
     line-height: 1.4;
-
 	b{font-weight:500;margin-top: 40px;display: block;}
+	p{font-size: 22px;}
 }
 
 .fix_menu{
 	position:absolute;
-	right:0;
 	background-color: rgba(0, 0, 0, 0.3);
 	height: 100%;
 	font-size: 18px;
 	width:320px;
+	top:0;
+   	bottom:0;
+    right:0;
+    overflow-y:auto;
 
 	ul{
-		padding: 0 40px;
+		padding: 40px;
 		position: relative;
-    	top: calc(50% - 324px);
 	}
 
 	li{
@@ -73,14 +80,41 @@ body{
 		}
 
 		a{
-			display:block;
 			line-height:40px;
-			color:white;
-			text-decoration:none;
 		}
 	}
 	.active_li{
 	border-bottom: 1px solid #fff;
 }
 
+}
+
+.second_page{
+	.main_text{
+		width: 660px;
+		top:140px;
+		b{margin-top:0; display:initial;}
+
+		li{
+			font-size: 22px;
+			list-style:initial;
+			margin-left: 21px;
+		}
+	}
+	h1{
+		padding-bottom: 20px;
+	}
+	h2{
+		font-size: 26px;
+		margin-top: 50px;
+	}
+	p{
+		margin-top: 40px;
+	}
+}
+
+.lesenswert{
+	h1{padding:0;}
+	a{font-size: 22px; background:url('../imgs/pdf_download.png');background-repeat:no-repeat;padding-left: 80px;font-style:italic; padding-bottom:10px;border-bottom:1px solid transparent;margin-top: 20px;}
+	a:hover{border-bottom:1px #fff solid;}
 }
