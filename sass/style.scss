@@ -1,29 +1,11 @@
 @import "compass/reset";
 
-@font-face {
-  font-family: GothamPro;
-  src: url(../fonts/GothamPro/GothamProLight.ttf);
-  font-weight: 100;
-}
-
-@font-face {
-  font-family: GothamPro;
-  src: url(../fonts/GothamPro/GothamPro.ttf);
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: GothamPro;
-  src: url(../fonts/GothamPro/GothamProBold.ttf);
-  font-weight: 500;
-}
-
 html{height: 100%;min-height:900px;}
 
 body{
 	height: 100%;
 	background: rgb(129, 125, 114);
-	font-family: GothamPro;
+	font-family: Roboto;
 	font-weight:100;
 	color:#fff;
 }
@@ -50,8 +32,8 @@ body{
     font-size: 48px;
     width: 580px;
     line-height: 1.4;
-	b{font-weight:500;margin-top: 40px;display: block;}
-	p{font-size: 22px;}
+	b{font-weight:700;margin-top: 40px;display: block;}
+	p{font-size: 23px;}
 }
 
 .fix_menu{
@@ -115,6 +97,60 @@ body{
 
 .lesenswert{
 	h1{padding:0;}
-	a{font-size: 22px; background:url('../imgs/pdf_download.png');background-repeat:no-repeat;padding-left: 80px;font-style:italic; padding-bottom:10px;border-bottom:1px solid transparent;margin-top: 20px;}
+	a{font-size: 22px; background:url('../imgs/pdf_download.png');background-repeat:no-repeat;padding-left: 80px;font-style:italic; padding-bottom:10px;border-bottom:1px solid transparent;margin-top: 20px;min-height:58px;}
 	a:hover{border-bottom:1px #fff solid;}
+}
+
+.content{
+      height: 550px;
+}
+
+.mCustomScrollbar .mCSB_scrollTools{ 
+  right: auto;
+}
+
+.mCustomScrollbar .mCSB_inside > .mCSB_container{ 
+  margin-right: 0;
+  margin-left: 120px;
+}
+
+.mCSB_scrollTools .mCSB_draggerRail{
+	background-color:white;
+	width:1px;
+}
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+	background-color:white;
+	border-radius: 0;
+}
+
+#mCSB_2_dragger_vertical{
+	height:215px;
+}
+
+.mCustomScrollbar{
+	a{
+	min-height: 120px;
+    background-position: bottom left;
+    padding-bottom: 10px;
+    background-position-y: 80%;
+    margin-bottom: 30px;
+	}
+	h2{
+		font-style: normal;
+		text-align: left;
+		position: relative;
+    	left: -80px;
+	}
+}
+
+.scroll_page{
+	.main_text{
+    	width: 800px;
+    }
+    h1{
+		padding-left: 120px;
+		margin-bottom: 50px;
+    }
+    .first_p{margin:0;}
 }
